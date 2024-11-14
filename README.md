@@ -36,7 +36,7 @@ For each project, add the two files in in the `.git/hooks` directory.
 At the root of your git project, this one-liner can set up it all:
 
 ```
-cd .git/hooks/ && curl -O https://raw.githubusercontent.com/Buzut/git-emojis-hook/master/commit-msg && curl -O https://raw.githubusercontent.com/Buzut/git-emojis-hook/master/prepare-commit-msg && chmod +x * || exit 0
+cd .git/hooks/ && curl -O https://raw.githubusercontent.com/pgailloud/git-emojis-hook/master/commit-msg && curl -O https://raw.githubusercontent.com/pgailloud/git-emojis-hook/master/prepare-commit-msg && chmod +x * || exit 0
 ```
 
 Also, it might be handy to place the two files in a directory within your home and add a bash alias to automate the deploy.
@@ -64,7 +64,7 @@ Unfortunately, hooks aren't part of a project and therefore, they cannot be comm
   "version": "1.0.0",
   "description": "The next big thing",
   "scripts": {
-    "prepare": "test -d .git && cd .git/hooks/ && curl -O https://raw.githubusercontent.com/Buzut/git-emojis-hook/master/commit-msg && curl -O https://raw.githubusercontent.com/Buzut/git-emojis-hook/master/prepare-commit-msg && chmod +x *"
+    "prepare": "test -d .git && cd .git/hooks/ && curl -O https://raw.githubusercontent.com/pgailloud/git-emojis-hook/master/commit-msg && curl -O https://raw.githubusercontent.com/pgailoud/git-emojis-hook/master/prepare-commit-msg && chmod +x *"
   },
   "dependencies": {…},
   "devDependencies": {…}
